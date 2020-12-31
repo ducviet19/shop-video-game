@@ -17,9 +17,6 @@ mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/amazona', {
   useUnifiedTopology: true,
   useCreateIndex: true,
 });
-
-
-
 app.use('/api/uploads', uploadRouter);
 app.use('/api/users', userRouter);
 app.use('/api/products', productRouter);
